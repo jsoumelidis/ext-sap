@@ -1,0 +1,21 @@
+{
+    "name": "jsoumelidis/ext-sap",
+    "description": "IDE autocomplete support for php_sap extension",
+    "type": "library",
+    "keywords": [
+        "sap",
+        "php-sap",
+        "netweaver",
+        "nwrfcsdk",
+        "saprfc"
+    ],
+    "homepage": "https://github.com/jsoumelidis/ext-sap",
+    "license": "BSD-3-Clause",
+    "require": {
+        "php": "7.0.*",
+        "ext-sap": "*"
+    },
+    "autoload": {
+        "classmap": ["classes/"]
+    }
+}
