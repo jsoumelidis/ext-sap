@@ -1,2 +1,3 @@
 # ext-sap
-IDE autocomplete support for php_sap extension
+IDE autocomplete and documentation support for [php_sap](https://github.com/jsoumelidis/php_sap)
+extension
