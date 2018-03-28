@@ -54,15 +54,15 @@ class SapRfcReadTable extends SapFunction
      *                                  through a Sap object
      * @throws SapException             If other error occurred
      */
-    public function select($fields, string $table, array $options = [], int $limit = 0, int $offset = 0): array
+    public function select($fields, $table, array $options = [], $limit = 0, $offset = 0)
     {
     }
 
     /**
      * Retrieve structure metadata for a table (logon user must have access to read that table).
      *
-     * @param string     $table  The table to retrieve metadata for
-     * @param array|null $fields Fields you are interested, or null for all fields
+     * @param string $table  The table to retrieve metadata for
+     * @param array  $fields Fields you are interested, omit for all fields
      *
      * @return array Table's metadata for the selected fields e.g.
      * <pre>
@@ -90,7 +90,7 @@ class SapRfcReadTable extends SapFunction
      *                                  through a Sap object
      * @throws SapException             If other error occurred
      */
-    public function describe(string $table, array $fields = null): array
+    public function describe($table, array $fields = [])
     {
     }
 }

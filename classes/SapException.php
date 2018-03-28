@@ -7,7 +7,7 @@ class SapException extends Exception
      *
      * @return string
      */
-    public function getMessageKey(): string
+    public function getMessageKey()
     {
     }
 
@@ -16,7 +16,7 @@ class SapException extends Exception
      *
      * @return string
      */
-    public function getMessageType(): string
+    public function getMessageType()
     {
     }
 
@@ -25,7 +25,7 @@ class SapException extends Exception
      *
      * @return string
      */
-    public function getMessageId(): string
+    public function getMessageId()
     {
     }
 
@@ -34,7 +34,7 @@ class SapException extends Exception
      *
      * @return string
      */
-    public function getMessageNumber(): string
+    public function getMessageNumber()
     {
     }
 

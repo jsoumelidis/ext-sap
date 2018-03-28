@@ -8,7 +8,7 @@ class Sap
      *
      * @param array $logonParameters System logon parameters
      */
-    public function __construct(array $logonParameters = null)
+    public function __construct(array $logonParameters = [])
     {
     }
 
@@ -50,7 +50,7 @@ class Sap
      * @throws LogicException   If connection to a SAP system is not available
      * @throws SapException     If function not found or other error occured
      */
-    public function fetchFunction($function, string $class = null, array $ctor_args = null): SapFunction
+    public function fetchFunction($function, $class = null, array $ctor_args = [])
     {
     }
 
@@ -67,7 +67,7 @@ class Sap
      * @throws LogicException   If connection to a SAP system is not available
      * @throws SapException     If function not found or other error occured
      */
-    public function call(string $function, array $args = null, bool $rtrim = null): array
+    public function call($function, array $args = [], $rtrim = null)
     {
     }
 
@@ -78,14 +78,14 @@ class Sap
      *
      * @return void
      */
-    public function setFunctionClass(string $class)
+    public function setFunctionClass($class)
     {
     }
 
     /**
      * @return string The default class this connection uses for fetching Remote Function (SapFunction) objects
      */
-    public function getFunctionClass(): string
+    public function getFunctionClass()
     {
     }
 
@@ -94,7 +94,7 @@ class Sap
      *
      * @return array
      */
-    public function getAttributes(): array
+    public function getAttributes()
     {
     }
 }
