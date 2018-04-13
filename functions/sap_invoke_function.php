@@ -12,4 +12,4 @@
  * @throws InvalidArgumentException if $connection is not a valid SAP Connection resource
  * @throws SapException             RFC raised exception or other error occured
  */
-function sap_invoke_function(string $name, $connection, array $imports = null, bool $rtrim = null): array {}
+function sap_invoke_function($name, $connection, array $imports = null, $rtrim = null) {}
